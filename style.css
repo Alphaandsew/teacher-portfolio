@@ -1,0 +1,73 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body{
+  background: url("images/ferns.jpg");
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  width: 100%;
+  font-size: 17px;
+}
+
+h1{
+  font-size: 48px;
+}
+h2{
+  font-size: 36;
+}
+h3,h4{
+  font-size: 20;
+}
+
+img{
+  max-width: 300px;
+}
+
+
+nav ul{
+  position: absolute;
+  right: 0;
+  display: flex;
+  justify-content: right;
+  list-style: none;
+}
+
+nav{
+  height: 100vh;
+  display: grid;
+}
+
+.paper{
+  padding: 30px;
+  background: rgba(255,255,255,.9);
+  outline: 2px solid rgba(0,30,10,.5);
+  outline-offset: -15px;
+  height: 90%;
+  width: 90%;
+  justify-self: center;
+  align-self: center;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+}
+
+.paper h1{
+  align-self: end;
+}
+.paper h3{
+  align-self: start;
+}
+
+.paper .social-media{
+  align-self: end;
+  justify-self: end;
+}
+
+main{
+  background: white;
+  min-height: 100vh;
+  padding: 1rem;
+}
