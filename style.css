@@ -5,40 +5,58 @@
 }
 
 body{
-  background: url("images/ferns.jpg");
+  background: url("images/ferns.jpg") no-repeat;
+  background-size: cover;
   display: grid;
-  grid-template-columns: 1fr 2fr;
+  grid-template-columns: 33% 2fr;
   width: 100%;
   font-size: 17px;
+  line-height: 1.6;
+  font-family: 'Open Sans', sans-serif;
+  color: #0A1E00;
+}
+
+::selection{
+  background: rgba(255,255,0,.5);
+}
+
+h1,h2{
+  margin-top: 1.8em;
+  font-family: 'Raleway', sans-serif;
 }
 
 h1{
   font-size: 48px;
 }
 h2{
-  font-size: 36;
+  font-size: 36px;
 }
 h3,h4{
-  font-size: 20;
+  font-size: 17px;
 }
 
 img{
   max-width: 300px;
 }
 
+p{
+  margin: 2em 0;
+}
+nav{
+  position:fixed;
+  width: 33%;
+  height: 100vh;
+  display: grid;
+}
 
 nav ul{
-  position: absolute;
-  right: 0;
+  align-self: start;
+  justify-self: end;
   display: flex;
   justify-content: right;
   list-style: none;
 }
 
-nav{
-  height: 100vh;
-  display: grid;
-}
 
 .paper{
   padding: 30px;
@@ -51,23 +69,26 @@ nav{
   align-self: center;
   display: grid;
   align-items: center;
-  justify-content: center;
+  justify-items: center;
 }
 
 .paper h1{
   align-self: end;
 }
 .paper h3{
+  font-weight: normal;
   align-self: start;
 }
 
 .paper .social-media{
   align-self: end;
   justify-self: end;
+  width: 100%;
 }
 
 main{
+  grid-column: 2;
   background: white;
   min-height: 100vh;
-  padding: 1rem;
+  padding: 3em;
 }
